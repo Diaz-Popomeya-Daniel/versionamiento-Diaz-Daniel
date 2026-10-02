@@ -35,7 +35,7 @@ function loadProductTable() {
                 <td>${product.id}</td>
                 <td>${product.name}</td>
                 <td>$${product.price}</td>
-                <td><button class="delete-btn" data-id="${product.id}">Delete</button></td>
+                <td><button class="delete-btn" data-id="${product.id}">Eliminar</button></td>
             `;
             tableBody.appendChild(row);
         });
@@ -54,7 +54,7 @@ function addProduct() {
 
     //Validate inputs
     if (!name || isNaN(price) || price <= 0) {
-        alert("Please enter a valid name and price.");
+        alert("Ingresa un nombre y un precio válidos.");
         return;
     }
 
